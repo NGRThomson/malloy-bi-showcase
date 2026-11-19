@@ -412,7 +412,6 @@
 					<a href="#layer">Semantic layer</a>
 					<a href="#agent">Agent</a>
 					<a href="#history">History</a>
-					<a href="#article">Article+</a>
 				</div>
 			</div>
 		</nav>
@@ -681,46 +680,6 @@ prices -&gt; by_year is {
 					</ul>
 				</div>
 			</div>
-		</section>
-
-		<section id="article" class="wrap">
-			<h2>Article+ — an article as a standing query</h2>
-			<p class="section-lede">
-				The same catalog can check journalism. Feed it a public article and Jev classifies each
-				sentence into a claim (event, state or thesis), maps it onto a field and a period, and the
-				claim is re-run over its own window.
-			</p>
-			<div class="grid g2">
-				<div>
-					<div class="code-head"><span>npm run article -- &lt;url&gt;</span><span>18 sentences · $0.001 · 0.9 s</span></div>
-					<pre><code><span class="c">#  kind   period  sector            published  ours           check</span>
-9  event  ytd     Energy            3.41%      +8.45% · 3/10  contradicted
-11 event  ytd     Consumer Staples  0.03%      +7.16% · 4/10  confirmed
-
-<span class="c">not trackable (13) — what a catalog would need to add:</span>
-  1  index series not in catalog      The Russell 2000 slid 1.66%…
-  2  no catalog sector or metric      PLBL led today's gainers with 28.79%…</code></pre>
-				</div>
-				<div class="card">
-					<span class="kicker">The finding</span>
-					<h3>~25% of claims were checkable</h3>
-					<p style="margin-bottom: 10px">
-						Two daily market wraps: 24–28% of claims survived contact with a sector-level monthly
-						catalog. The binding constraint is coverage — no index, no commodities, no single
-						names — not extraction.
-					</p>
-					<p>
-						Each claim is checked over <em>its own</em> period: YTD means January to the last
-						month, day-level claims fall back to month-over-month. “Contradicted” means “not
-						reproducible at this grain”, not “the article is wrong”.
-					</p>
-				</div>
-			</div>
-			<p class="section-lede" style="margin-top: 18px">
-				The full brief — artifact, claim taxonomy, prior art, risks and roadmap — lives with the
-				source. The end state: an article that keeps a ledger of its own claims, alerts when a
-				falsifier trips, and drafts the next edition with every sentence citing a query.
-			</p>
 		</section>
 
 		<section class="wrap">
