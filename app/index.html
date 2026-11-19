@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Intelligence · DuckDB + Malloy</title>
+		<meta
+			name="description"
+			content="A browser-native BI workspace: JSON specs compiled to Malloy over DuckDB-WASM, with an agent that edits charts under validation and keeps per-chart revision history."
+		/>
+		<link rel="icon" href="/malloy-bi-showcase/app/favicon.svg" type="image/svg+xml" />
+		<script type="module" crossorigin src="/malloy-bi-showcase/app/assets/index-B36X-VjS.js"></script>
+		<link rel="stylesheet" crossorigin href="/malloy-bi-showcase/app/assets/index-MDYCUP8-.css">
+	</head>
+	<body>
+		<header class="topbar">
+			<div class="brand">
+				<div class="logo">◈</div>
+				<div>
+					<h1 id="page-title">Portfolio Intelligence</h1>
+					<p id="page-subtitle">DuckDB-WASM · Malloy semantic layer · all in the browser</p>
+				</div>
+			</div>
+			<div class="meta">
+				<span class="chips-inline" id="page-chips"></span>
+				<span class="status" id="status"><span class="dot"></span>booting…</span>
+			</div>
+		</header>
+
+		<div class="layout">
+			<main id="dashboard"></main>
+			<aside class="rail" id="chat-rail">
+				<section class="chat-host" id="chat" aria-label="AI assistant"></section>
+			</aside>
+		</div>
+
+		<dialog class="docs-dialog" id="docs-dialog">
+			<div class="docs-head">
+				<strong>Docs</strong>
+				<button class="docs-close" id="docs-close" type="button">Close</button>
+			</div>
+			<nav class="tabs" id="explainer-tabs" role="tablist" aria-label="Explainers"></nav>
+			<article class="markdown" id="explainer"></article>
+		</dialog>
+
+	</body>
+</html>
